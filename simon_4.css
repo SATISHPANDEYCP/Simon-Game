@@ -101,6 +101,17 @@
 }
 
 
+#start-button {
+    
+   background-color: lemonchiffon;
+    animation: fcolorChange 10s infinite;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+
 .head-container {
     animation: fcolorChange 10s infinite;
     border-radius: 2rem;
