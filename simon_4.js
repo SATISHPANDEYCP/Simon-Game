@@ -10,7 +10,7 @@ let hiScores = 0;
 
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress", function () {
+document.addEventListener("click", function () {
 
     if (started == false) {
         console.log("Game Started");
