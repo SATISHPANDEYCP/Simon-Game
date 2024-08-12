@@ -102,8 +102,8 @@
 
 
 #start-button {
-    
-   background-color: lemonchiffon;
+
+    background-color: lemonchiffon;
     animation: fcolorChange 10s infinite;
     height: 40px;
     width: 100px;
@@ -158,20 +158,25 @@
 
 
 /* For flashing purpose when button is clicked used in js*/
-.flash
-{
+.flash {
     background-color: white;
 
 }
 
-.userflash{
+.userflash {
     background-color: green;
 }
 
 @keyframes flashRed {
-    0% { background-color: red; }
-    100% { background-color: white; }
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: white;
+    }
 }
+
 .all.flash {
     animation: flashRed 0.5s;
 }
@@ -186,8 +191,10 @@
         display: grid;
         justify-content: center;
         background-color: azure;
-        height: 100vh; /* Full viewport height */
-        width: 100vw; /* Full viewport width */
+        height: 100vh;
+        /* Full viewport height */
+        width: 100vw;
+        /* Full viewport width */
     }
 
 
@@ -215,12 +222,15 @@
 @media (min-width:150px) and (max-width:375px) {
 
     .all {
-        
+
         display: grid;
         justify-content: center;
-        height: 100vh; /* Full viewport height */
-        width: 100vw; /* Full viewport width */
+        height: 100vh;
+        /* Full viewport height */
+        width: 100vw;
+        /* Full viewport width */
     }
+
 
 
 
@@ -240,6 +250,6 @@
         border-radius: 1rem;
         height: 165px;
         width: 170px;
-        margin-bottom: 200px;
+       margin: auto 0;
     }
 }

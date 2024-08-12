@@ -17,7 +17,7 @@ startButton.addEventListener("click", function () {
     if (started == false) {
         console.log("Game Started");
         started = true;
-
+        startButton.style.display = "none"; // Hide start button
         levelup();
     }
 });
@@ -81,6 +81,7 @@ function winner(isHighScore) {
     } else {
         h2.innerHTML = `Game Over! Your score was: <b>${currentScore}</b> <br>You lose the Game.<br> Press the Start Game button to play again.`;
     }
+    startButton.style.display = "inline-block"; // Show start button again
 }
 
 function Checkans(idx) {
@@ -125,4 +126,20 @@ function reset() {
     userSeq = [];
     level = 0;
     score = 0; // Reset score as well
+}
+
+
+// btn flash
+function btnflash(btn) {
+    btn.classList.add("flash");
+    setTimeout(function () {
+        btn.classList.remove("flash")
+    }, 250);
+}
+
+function userflash(btn) {
+    btn.classList.add("userflash");
+    setTimeout(function () {
+        btn.classList.remove("userflash")
+    }, 250);
 }
